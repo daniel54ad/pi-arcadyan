@@ -1,0 +1,26 @@
+{
+  "flows": [
+  	{
+      // default flow
+  	  "priority": 40001,
+  	  "isPermanent": true,
+  	  "deviceId": "$OVS_URI",
+  	  "treatment": {
+  		"instructions": [
+  		  {
+  			"type": "OUTPUT",
+  			"port": "NORMAL"
+                  },
+                  {
+                        "type": "OUTPUT",
+                        "port": "CONTROLLER"
+                  }
+  		]
+  	  },
+  	  "selector": {
+  		"criteria": [
+  		]
+  	  }
+  	}
+  ]
+}

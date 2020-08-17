@@ -9,8 +9,8 @@ fi
 WAN_INTERFACE=$1
 
 # link
-sudo ip link set eth1 up
-sudo ip link set eth2 up
+sudo ip link set eth1 up && sudo ovs-vsctl add-port ovsbr0 eth1
+sudo ip link set eth2 up && sudo ovs-vsctl add-port ovsbr0 eth2
 
 
 sudo ip addr add 192.168.100.100/24 dev dhcper
