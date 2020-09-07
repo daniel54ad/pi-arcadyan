@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# set multi gateway for multi uplinks
+# ref: https://tldp.org/HOWTO/Adv-Routing-HOWTO/lartc.rpdb.multiple-links.html
+
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
