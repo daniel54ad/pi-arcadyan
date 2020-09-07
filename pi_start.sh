@@ -12,10 +12,9 @@ WAN_INTERFACE=$1
 sudo ip link set eth1 up && sudo ovs-vsctl add-port ovsbr0 eth1
 sudo ip link set eth2 up && sudo ovs-vsctl add-port ovsbr0 eth2
 
-
+sudo ovs-vsctl add-port ovsbr0 dhcper -- set interface dhcper type=internal
 sudo ip addr add 192.168.100.100/24 dev dhcper
 sudo ip link set dhcper up
-sudo ovs-vsctl add-port ovsbr0 dhcper
 
 sudo sysctl -w net.ipv4.ip_forward=1
 sudo service dnsmasq start
