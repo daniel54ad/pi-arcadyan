@@ -11,11 +11,15 @@ fi
 # link of device-connect
 sudo ip link set eth2 up && sudo ovs-vsctl add-port ovsbr0 eth2
 
-sudo ovs-vsctl add-port ovsbr0 dhcper -- set interface dhcper type=internal
-sudo ip addr add 192.168.100.100/24 dev dhcper
-sudo ip link set dhcper up
+sudo ovs-vsctl add-port ovsbr0 gw0 -- set interface gw0 type=internal
+sudo ip addr add 192.168.100.100/24 dev gw0
+sudo ip link set gw0 up
 
+# start dnsmasq
 sudo sysctl -w net.ipv4.ip_forward=1
+
+sudo service unbound stop
+
 sudo service dnsmasq start
 
 # mark by DCSP

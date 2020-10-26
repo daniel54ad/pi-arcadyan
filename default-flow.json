@@ -1,0 +1,22 @@
+{
+  "flows": [
+    {
+      "priority": 40001,
+      "timeout": 0,
+      "isPermanent": true,
+      "deviceId": "of:0000503eaabb6b34",
+      "tableId": 0,
+      "treatment": {
+        "instructions": [
+          {
+            "type": "TABLE",
+            "tableId": 1
+          }
+        ]
+      },
+      "selector": {
+
+      }
+    }
+  ]
+}
