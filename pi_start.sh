@@ -8,6 +8,9 @@ if [ $# -lt 0 ];  then
     exit 0
 fi
 
+# set ovs dpid manually
+sudo ovs-vsctl set bridge ovsbr0 other_config:datapath-id=0000000000000001
+
 # link of device-connect
 sudo ip link set eth2 up && sudo ovs-vsctl add-port ovsbr0 eth2
 
