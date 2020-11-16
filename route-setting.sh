@@ -18,10 +18,10 @@ T2=table2
 IP1=`ip addr show ${IF1} | awk '/inet / {split($2,a,"/"); print a[1]}'`
 IP2=`ip addr show ${IF2} | awk '/inet / {split($2,a,"/"); print a[1]}'`
 
-default_GW=${IP1}
-
 GW1=`ip route show default dev ${IF1}| awk '{print $3}'`
 GW2=`ip route show default dev ${IF2}| awk '{print $3}'`
+
+default_GW=${GW1}
 
 P1_NET=`ip route show dev ${IF1} | awk '/kernel/ {print $1}'`
 P2_NET=`ip route show dev ${IF2} | awk '/kernel/ {print $1}'`
