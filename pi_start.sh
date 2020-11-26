@@ -37,4 +37,7 @@ sudo ip rule add fwmark 2 table table2 priority 101
 sudo iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
 sudo iptables -t nat -A POSTROUTING -s 192.168.100.0/24 -o eth1 -j MASQUERADE
 
+# SNAT for outgoing VXLAN Packet
+sudo iptables -t nat -I POSTROUTING -p udp -m udp --sport 4789  -j MASQUERADE --to-ports 49152-65535
+
 sudo sysctl -w net.ipv4.conf.all.rp_filter=2
