@@ -4,7 +4,7 @@
       "priority": 40001,
       "timeout": 0,
       "isPermanent": true,
-      "deviceId": "of:0000503eaabb6b34",
+      "deviceId": "of:0000000000000001",
       "tableId": 0,
       "treatment": {
         "instructions": [

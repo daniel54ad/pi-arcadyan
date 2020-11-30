@@ -11,9 +11,3 @@ onos_ip=$1
 set -x
 sudo ovs-vsctl set-controller ovsbr0 tcp:${onos_ip}:6653
 
-echo "send flow to onos..."
-sleep 5
-# sent default flow to ONOS
-curl -X POST --user onos:rocks -H "content-type:application/json" -d @default-flow.json http://${onos_ip}:8181/onos/v1/flows
-
-echo "finish"
