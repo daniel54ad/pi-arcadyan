@@ -28,5 +28,5 @@ srcport 4789 4790 \
 tos inherit
 
 sudo ip link set vx${vni} up
-sudo ovs-vsctl add-port ovsbr0 vx${vni}
-
+ofport=$((10000+${vni}))
+sudo ovs-vsctl add-port ovsbr0 vx${vni} --  set interface vx${vni} ofport_request=${ofport}
