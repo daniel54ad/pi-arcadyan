@@ -2,7 +2,7 @@
 #include "MQTTClient.h"
 using namespace std;
 
-#define ADDRESS     "tcp://54.157.155.150"
+#define ADDRESS     "tcp://54.90.45.224"
 #define CLIENTID    "Daniel"
 #define TOPIC       "Try/MQTT"
 #define QOS         1
@@ -55,17 +55,17 @@ int main(int argc, char* argv[]){
         exit(EXIT_FAILURE);
     }
 
-    // printf("Subscribing to topic %s\n"
-    //        "For client %s using QoS%d\n"
-    //        "Press Q<Enter> to quit\n"
-    //        "====================================================\n", TOPIC, CLIENTID, QOS);
-    // fflush(stdout);
+    printf("Subscribing to topic %s\n"
+           "For client %s using QoS%d\n"
+           "Press Q<Enter> to quit\n"
+           "====================================================\n", TOPIC, CLIENTID, QOS);
+    fflush(stdout);
 
     MQTTClient_subscribe(client, TOPIC, QOS);
 
-    // do {
-    //     ch = getchar();
-    // } while(ch!='Q' && ch != 'q');
+    do {
+        ch = getchar();
+    } while(ch!='Q' && ch != 'q');
     MQTTClient_disconnect(client, 10000);
     MQTTClient_destroy(&client);
     

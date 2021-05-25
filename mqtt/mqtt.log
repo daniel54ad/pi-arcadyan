@@ -1,2 +1,9 @@
 nohup: ignoring input
-Failed to connect, return code -1
+Subscribing to topic Try/MQTT
+For client Daniel using QoS1
+Press Q<Enter> to quit
+====================================================
+
+Connection lost
+     cause: (null)
+
