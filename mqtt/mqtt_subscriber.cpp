@@ -24,7 +24,7 @@ int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *m
     for(i=0; i<message->payloadlen; i++) {
         putchar(*payloadptr++);
     }
-    putchar('\n\n');
+    putchar('\n');
     fflush(stdout);
     MQTTClient_freeMessage(&message);
     MQTTClient_free(topicName);
