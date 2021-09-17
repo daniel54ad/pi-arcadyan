@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ $# -lt 2 ]; then
+if [ $# -lt 3 ]; then
     echo "usage: ./change_wan.sh vCPE-Manager-IP dscp"
     exit 0
 fi

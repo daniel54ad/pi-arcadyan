@@ -3,7 +3,297 @@ Subscribing to topic Try/MQTT
 For client Daniel using QoS1
 Press Q<Enter> to quit
 ====================================================
-
-Connection lost
-     cause: (null)
-
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 83578sec preferred_lft 83578sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel master ovs-system state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: ue_legacy:dscp1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 83136sec preferred_lft 83136sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::523e:aaff:febb:6b34/64 scope link 
+       valid_lft forever preferred_lft forever
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: ue_virtual:vxlan10011
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 83093sec preferred_lft 83093sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::523e:aaff:febb:6b34/64 scope link 
+       valid_lft forever preferred_lft forever
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: ue_virtual:vxlan10011
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 83076sec preferred_lft 83076sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::523e:aaff:febb:6b34/64 scope link 
+       valid_lft forever preferred_lft forever
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: ue_legacy:dscp1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 83045sec preferred_lft 83045sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::523e:aaff:febb:6b34/64 scope link 
+       valid_lft forever preferred_lft forever
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: ue_legacy:dscp1
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 83014sec preferred_lft 83014sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::523e:aaff:febb:6b34/64 scope link 
+       valid_lft forever preferred_lft forever
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: set_ue_mater:typeboth
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 82992sec preferred_lft 82992sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::523e:aaff:febb:6b34/64 scope link 
+       valid_lft forever preferred_lft forever
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: ue_virtual:vxlan10011
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+    link/ether dc:a6:32:c1:42:5d brd ff:ff:ff:ff:ff:ff
+    inet 192.168.50.168/24 brd 192.168.50.255 scope global dynamic eth0
+       valid_lft 82982sec preferred_lft 82982sec
+    inet6 fe80::dea6:32ff:fec1:425d/64 scope link 
+       valid_lft forever preferred_lft forever
+3: eth1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 5c:92:5e:80:0f:50 brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master ovs-system state UP group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::523e:aaff:febb:6b34/64 scope link 
+       valid_lft forever preferred_lft forever
+5: wlan0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether dc:a6:32:c1:42:5f brd ff:ff:ff:ff:ff:ff
+6: ovs-system: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 06:ab:b1:00:c8:82 brd ff:ff:ff:ff:ff:ff
+7: ovsbr0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 50:3e:aa:bb:6b:34 brd ff:ff:ff:ff:ff:ff
+8: gw0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/ether a2:5e:0c:8c:cb:53 brd ff:ff:ff:ff:ff:ff
+    inet 192.168.100.100/24 scope global gw0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::a05e:cff:fe8c:cb53/64 scope link 
+       valid_lft forever preferred_lft forever
+9: vx11: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master ovs-system state UNKNOWN group default qlen 1000
+    link/ether a2:d4:c4:42:b1:ba brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::a0d4:c4ff:fe42:b1ba/64 scope link 
+       valid_lft forever preferred_lft forever
+Message arrived
+     topic: Try/MQTT
+   message: set_ue_mater:typedownload

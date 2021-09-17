@@ -2,7 +2,7 @@
 #include "MQTTClient.h"
 using namespace std;
 
-#define ADDRESS     "tcp://54.90.45.224"
+#define ADDRESS     "tcp://52.71.241.248"
 #define CLIENTID    "Daniel"
 #define TOPIC       "Try/MQTT"
 #define QOS         1
@@ -25,6 +25,7 @@ int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *m
         putchar(*payloadptr++);
     }
     putchar('\n');
+    // system("echo winlabisgood | sudo -S ip a 2> /dev/null");
     fflush(stdout);
     MQTTClient_freeMessage(&message);
     MQTTClient_free(topicName);
